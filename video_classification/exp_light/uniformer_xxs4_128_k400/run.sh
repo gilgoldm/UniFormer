@@ -1,9 +1,9 @@
-work_path=$(dirname $0)
+work_path=./work_dir
 PYTHONPATH=$PYTHONPATH:./slowfast \
 python tools/run_net_cls.py \
   --cfg $work_path/config.yaml \
   DATA.PATH_TO_DATA_DIR ./data_list/k400 \
-  DATA.PATH_PREFIX your_path_to_data \
+  DATA.PATH_PREFIX ../rsu/data/kinetics-dataset/k400 \
   DATA.PATH_LABEL_SEPARATOR "," \
   TRAIN.EVAL_PERIOD 1 \
   TRAIN.CHECKPOINT_PERIOD 1 \

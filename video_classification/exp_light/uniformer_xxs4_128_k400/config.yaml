@@ -1,5 +1,5 @@
 TRAIN:
-  ENABLE: True
+  ENABLE: False
   DATASET: kinetics_sparse
   BATCH_SIZE: 8
   EVAL_PERIOD: 10
@@ -27,7 +27,7 @@ UNIFORMER:
   DROP_DEPTH_RATE: 0.
   SPLIT: False
   INIT_VALUE: 0.1
-  PRETRAIN_NAME: 'uniformer_xxs_128_in1k'
+  PRETRAIN_NAME: 'uniformer_xxs4_128_k400'
 AUG:
   NUM_SAMPLE: 2
   ENABLE: True

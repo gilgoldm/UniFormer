@@ -13,7 +13,7 @@ import slowfast.utils.logging as logging
 
 logger = logging.get_logger(__name__)
 
-model_path = 'path_to_models'
+model_path = '/tmp/shaul/UniFormer/pretrained_models'
 model_path = {
     'uniformer_small_in1k': os.path.join(model_path, 'uniformer_small_in1k.pth'),
     'uniformer_small_k400_8x8': os.path.join(model_path, 'uniformer_small_k400_8x8.pth'),

@@ -17,8 +17,9 @@ global_attn = None
 token_indices = None
 init_value = 1.
 
-model_path = 'path_to_models'
+model_path = '/tmp/shaul/UniFormer/pretrained_models'
 model_path = {
+    'uniformer_xxs4_128_k400': os.path.join(model_path, 'uniformer_xxs4_128_k400.pth'),
     'uniformer_xxs_128_in1k': os.path.join(model_path, 'uniformer_xxs_128_in1k.pth'),
     'uniformer_xxs_160_in1k': os.path.join(model_path, 'uniformer_xxs_160_in1k.pth'),
     'uniformer_xxs_192_in1k': os.path.join(model_path, 'uniformer_xxs_192_in1k.pth'),
@@ -468,6 +469,8 @@ class Uniformer_light_ls_fp32(nn.Module):
         self.pos_drop = nn.Dropout(p=drop_rate)
         dpr = [x.item() for x in torch.linspace(0, drop_path_rate, sum(depth))]  # stochastic depth decay rule
         num_heads = [dim // head_dim for dim in embed_dim]
+        if type(mlp_ratio) == int:
+            mlp_ratio = [mlp_ratio] * len(depth)
         self.blocks1 = nn.ModuleList([
             CBlock(
                 dim=embed_dim[0], num_heads=num_heads[0], mlp_ratio=mlp_ratio[0], qkv_bias=qkv_bias, qk_scale=qk_scale,

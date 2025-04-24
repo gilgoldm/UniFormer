@@ -1,0 +1,59 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debugger (run.sh)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/video_classification/tools/run_net_cls.py",
+      "console": "integratedTerminal",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/video_classification"
+      },
+      "justMyCode": false,
+      "args": [
+        "--cfg",
+        "${workspaceFolder}/video_classification/exp_light/uniformer_xxs4_128_k400/config.yaml",
+        "DATA.PATH_TO_DATA_DIR",
+        "${workspaceFolder}/video_classification/data_list/k400",
+        "DATA.PATH_PREFIX",
+        "${workspaceFolder}/rsu/data/kinetics-dataset/k400",
+        "DATA.PATH_LABEL_SEPARATOR",
+        ",",
+        "TRAIN.EVAL_PERIOD",
+        "1",
+        "TRAIN.CHECKPOINT_PERIOD",
+        "1",
+        "TRAIN.BATCH_SIZE",
+        "256",
+        "NUM_GPUS",
+        "1",
+        "UNIFORMER.DROP_DEPTH_RATE",
+        "0.05",
+        "SOLVER.MAX_EPOCH",
+        "110",
+        "SOLVER.BASE_LR",
+        "4e-4",
+        "SOLVER.WARMUP_EPOCHS",
+        "10.0",
+        "SOLVER.WEIGHT_DECAY",
+        "0.1",
+        "DATA.TEST_CROP_SIZE",
+        "128",
+        "TEST.NUM_ENSEMBLE_VIEWS",
+        "1",
+        "TEST.NUM_SPATIAL_CROPS",
+        "1",
+        "TEST.TEST_BEST",
+        "False",
+        "RNG_SEED",
+        "66667",
+        "OUTPUT_DIR",
+        "${workspaceFolder}/video_classification/exp_light/uniformer_xxs4_128_k400"
+      ]
+    }
+  ]
+}
