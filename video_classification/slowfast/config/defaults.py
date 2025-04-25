@@ -455,8 +455,6 @@ _C.UNIFORMER.TRADE_OFF = [[], [], [1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5], [0.5, 
 #  fails when parent does do have a field present in the child.
 _C.UNIFORMER.INIT_VALUE = 0.2
 
-_C.UNIFORMER.PRETRAIN_MODEL_PATH = '/tmp/shaul/UniFormer/pretrained_models'
-
 # -----------------------------------------------------------------------------
 # SlowFast options
 # -----------------------------------------------------------------------------
