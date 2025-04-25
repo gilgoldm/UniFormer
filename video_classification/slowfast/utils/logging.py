@@ -13,7 +13,7 @@ import sys
 import simplejson
 from iopath.common.file_io import g_pathmgr
 
-import slowfast.utils.distributed as du
+import video_classification.slowfast.utils.distributed as du
 
 
 def _suppress_print():

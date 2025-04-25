@@ -8,8 +8,8 @@ from functools import partial
 import torch.nn as nn
 # from detectron2.layers import ROIAlign
 
-from slowfast.models.batchnorm_helper import get_norm
-from slowfast.models.video_model_builder import _POOL1, _TEMPORAL_KERNEL_BASIS
+from video_classification.slowfast.models.batchnorm_helper import get_norm
+from video_classification.slowfast.models.video_model_builder import _POOL1, _TEMPORAL_KERNEL_BASIS
 
 from pytorchvideo.models.csn import create_csn
 from pytorchvideo.models.head import (

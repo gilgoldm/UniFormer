@@ -8,11 +8,11 @@ import torch
 # from detectron2.config import get_cfg
 # from detectron2.engine import DefaultPredictor
 
-import slowfast.utils.checkpoint as cu
-from slowfast.datasets import cv2_transform
-from slowfast.models import build_model
-from slowfast.utils import logging
-from slowfast.visualization.utils import process_cv2_inputs
+import video_classification.slowfast.utils.checkpoint as cu
+from video_classification.slowfast.datasets import cv2_transform
+from video_classification.slowfast.models import build_model
+from video_classification.slowfast.utils import logging
+from video_classification.slowfast.visualization.utils import process_cv2_inputs
 
 logger = logging.get_logger(__name__)
 

@@ -9,11 +9,11 @@ from timm.models.layers import trunc_normal_, DropPath, to_2tuple
 from .build import MODEL_REGISTRY
 import os
 
-import slowfast.utils.logging as logging
+import video_classification.slowfast.utils.logging as logging
 
 logger = logging.get_logger(__name__)
 
-model_path = '/tmp/shaul/UniFormer/pretrained_models'
+model_path = '/home/gilg/dev/UniFormer/rsu/models/'
 assert os.path.exists(model_path), f'Pretrained models folder does not exists. model_path={model_path}'
 model_path = {
     'uniformer_small_in1k': os.path.join(model_path, 'uniformer_small_in1k.pth'),
