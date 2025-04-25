@@ -11,7 +11,7 @@ from torchvision import transforms
 import torch.utils.data
 from collections import defaultdict
 
-import slowfast.utils.logging as logging
+import video_classification.slowfast.utils.logging as logging
 
 from . import utils as utils
 from .build import DATASET_REGISTRY

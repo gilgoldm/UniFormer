@@ -5,7 +5,7 @@
 import torch
 from fvcore.common.registry import Registry
 
-import slowfast.utils.logging as logging
+import video_classification.slowfast.utils.logging as logging
 
 logger = logging.get_logger(__name__)
 

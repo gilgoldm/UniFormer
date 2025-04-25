@@ -6,7 +6,7 @@ import numpy
 import torch
 import torch.nn as nn
 
-from slowfast.models.common import DropPath, Mlp
+from video_classification.slowfast.models.common import DropPath, Mlp
 
 
 def attention_pool(tensor, pool, thw_shape, has_cls_embed=True, norm=None):

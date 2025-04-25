@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 import torch
 from sklearn.metrics import confusion_matrix
 
-import slowfast.utils.logging as logging
-from slowfast.datasets.utils import pack_pathway_output, tensor_normalize
+import video_classification.slowfast.utils.logging as logging
+from video_classification.slowfast.datasets.utils import pack_pathway_output, tensor_normalize
 
 logger = logging.get_logger(__name__)
 

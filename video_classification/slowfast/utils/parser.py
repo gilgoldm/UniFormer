@@ -6,8 +6,8 @@
 import argparse
 import sys
 
-import slowfast.utils.checkpoint as cu
-from slowfast.config.defaults import get_cfg
+import video_classification.slowfast.utils.checkpoint as cu
+from video_classification.slowfast.config.defaults import get_cfg
 
 
 def parse_args():
