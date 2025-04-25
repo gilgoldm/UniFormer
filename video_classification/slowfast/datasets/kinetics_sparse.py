@@ -8,7 +8,7 @@ import torch.utils.data
 from iopath.common.file_io import g_pathmgr
 from torchvision import transforms
 
-import slowfast.utils.logging as logging
+import video_classification.slowfast.utils.logging as logging
 
 from . import decoder as decoder
 from . import utils as utils
@@ -246,8 +246,7 @@ class Kinetics_sparse(torch.utils.data.Dataset):
                 target_fps=self.cfg.DATA.TARGET_FPS,
                 backend=self.cfg.DATA.DECODING_BACKEND,
                 max_spatial_scale=min_scale,
-                use_offset=self.cfg.DATA.USE_OFFSET_SAMPLING,
-                sparse=True
+                use_offset=self.cfg.DATA.USE_OFFSET_SAMPLING
             )
 
             # If decoding failed (wrong format, video is too short, and etc),
