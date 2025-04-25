@@ -16,8 +16,10 @@ logger = logging.get_logger(__name__)
 global_attn = None
 token_indices = None
 
-model_path = 'path_to_models'
+model_path = '/tmp/shaul/UniFormer/pretrained_models'
+assert os.path.exists(model_path), f'Pretrained models folder does not exists. model_path={model_path}'
 model_path = {
+    'uniformer_xxs4_128_k400': os.path.join(model_path, 'uniformer_xxs4_128_k400.pth'),
     'uniformer_xxs_128_in1k': os.path.join(model_path, 'uniformer_xxs_128_in1k.pth'),
     'uniformer_xxs_160_in1k': os.path.join(model_path, 'uniformer_xxs_160_in1k.pth'),
     'uniformer_xxs_192_in1k': os.path.join(model_path, 'uniformer_xxs_192_in1k.pth'),
