@@ -52,7 +52,9 @@
         "RNG_SEED",
         "66667",
         "OUTPUT_DIR",
-        "${workspaceFolder}/video_classification/exp_light/uniformer_xxs4_128_k400"
+        "${workspaceFolder}/video_classification/exp_light/uniformer_xxs4_128_k400",
+        "PRETRAIN_MODEL_PATH",
+        "${workspaceFolder}/pretrained_models"
       ]
     }
   ]

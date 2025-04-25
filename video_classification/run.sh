@@ -1,1 +1,0 @@
-/tmp/shaul/UniFormer/video_classification/exp_light/uniformer_xxs4_128_k400/run.sh

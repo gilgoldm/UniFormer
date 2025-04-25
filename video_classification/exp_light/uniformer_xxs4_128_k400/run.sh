@@ -1,4 +1,4 @@
-work_path=./work_dir
+work_path=$(dirname $0)
 PYTHONPATH=$PYTHONPATH:./slowfast \
 python tools/run_net_cls.py \
   --cfg $work_path/config.yaml \
