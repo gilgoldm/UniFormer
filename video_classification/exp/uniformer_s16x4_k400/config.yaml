@@ -1,5 +1,5 @@
 TRAIN:
-  ENABLE: True
+  ENABLE: False
   DATASET: kinetics
   BATCH_SIZE: 8
   EVAL_PERIOD: 10
@@ -26,7 +26,7 @@ UNIFORMER:
   ATTENTION_DROPOUT_RATE: 0
   DROP_DEPTH_RATE: 0.1
   SPLIT: False
-  PRETRAIN_NAME: 'uniformer_small_in1k'
+  PRETRAIN_NAME: 'uniformer_small_k400_16x4'
 AUG:
   NUM_SAMPLE: 2
   ENABLE: True
