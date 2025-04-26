@@ -19,6 +19,7 @@ model_path = {
     'uniformer_small_in1k': os.path.join(model_path, 'uniformer_small_in1k.pth'),
     'uniformer_small_k400_8x8': os.path.join(model_path, 'uniformer_small_k400_8x8.pth'),
     'uniformer_small_k400_16x4': os.path.join(model_path, 'uniformer_small_k400_16x4.pth'),
+    'uniformer_small_k400_16x8': os.path.join(model_path, 'uniformer_small_k400_16x8.pth'),
     'uniformer_small_k600_16x4': os.path.join(model_path, 'uniformer_small_k600_16x4.pth'),
     'uniformer_base_in1k': os.path.join(model_path, 'uniformer_base_in1k.pth'),
     'uniformer_base_k400_8x8': os.path.join(model_path, 'uniformer_base_k400_8x8.pth'),
