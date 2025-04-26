@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="uniformer_xxs4_128_k40" type="PythonConfigurationType" factoryName="Python">
+  <configuration default="false" name="uniformer_xxs4_128_k400" type="PythonConfigurationType" factoryName="Python">
     <module name="UniFormer" />
     <option name="ENV_FILES" value="" />
     <option name="INTERPRETER_OPTIONS" value="" />
