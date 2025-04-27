@@ -1,8 +1,10 @@
+#!/usr/bin/env python3
+
 from pathlib import Path
 
 # Define the source and destination directories
-source_dir = Path("/data/action-recognition/kinetics-dataset/k400/val")
-destination_dir = Path("/data/action-recognition/kinetics-dataset/k400/_val")
+source_dir = Path("./val")
+destination_dir = Path("./_val")
 
 # Ensure the destination directory exists
 destination_dir.mkdir(parents=True, exist_ok=True)
