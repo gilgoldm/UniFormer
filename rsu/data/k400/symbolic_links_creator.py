@@ -2,9 +2,11 @@
 
 from pathlib import Path
 
+script_dir = Path(__file__).parent
+
 # Define the source and destination directories
-source_dir = Path("./val")
-destination_dir = Path("./_val")
+source_dir = script_dir / "val"
+destination_dir = script_dir / "_val"
 
 # Ensure the destination directory exists
 destination_dir.mkdir(parents=True, exist_ok=True)
