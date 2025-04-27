@@ -11,7 +11,7 @@
       "program": "${workspaceFolder}/video_classification/tools/run_net_cls.py",
       "console": "integratedTerminal",
       "env": {
-        "PYTHONPATH": "${workspaceFolder}/video_classification"
+        "PYTHONPATH": "${workspaceFolder}"
       },
       "justMyCode": false,
       "args": [
