@@ -4,10 +4,10 @@
 A script to benchmark data loading.
 """
 
-import video_classification.slowfast.utils.logging as logging
-from video_classification.slowfast.utils.benchmark import benchmark_data_loading
-from video_classification.slowfast.utils.misc import launch_job
-from video_classification.slowfast.utils.parser import load_config, parse_args
+import slowfast.utils.logging as logging
+from slowfast.utils.benchmark import benchmark_data_loading
+from slowfast.utils.misc import launch_job
+from slowfast.utils.parser import load_config, parse_args
 
 logger = logging.get_logger(__name__)
 

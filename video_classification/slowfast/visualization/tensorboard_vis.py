@@ -9,9 +9,9 @@ import torch
 from torch.utils.tensorboard import SummaryWriter
 from torchvision.utils import make_grid
 
-import video_classification.slowfast.utils.logging as logging
-import video_classification.slowfast.visualization.utils as vis_utils
-from video_classification.slowfast.utils.misc import get_class_names
+import slowfast.utils.logging as logging
+import slowfast.visualization.utils as vis_utils
+from slowfast.utils.misc import get_class_names
 
 logger = logging.get_logger(__name__)
 log.getLogger("matplotlib").setLevel(log.ERROR)

@@ -8,15 +8,15 @@ import torch
 import tqdm
 from iopath.common.file_io import g_pathmgr
 
-import video_classification.slowfast.utils.checkpoint as cu
-import video_classification.slowfast.utils.logging as logging
-from video_classification.slowfast.datasets.ava_helper import parse_bboxes_file
-from video_classification.slowfast.datasets.cv2_transform import scale, scale_boxes
-from video_classification.slowfast.datasets.utils import get_sequence
-from video_classification.slowfast.models import build_model
-from video_classification.slowfast.utils import misc
-from video_classification.slowfast.visualization.utils import process_cv2_inputs
-# from video_classification.slowfast.visualization.video_visualizer import VideoVisualizer
+import slowfast.utils.checkpoint as cu
+import slowfast.utils.logging as logging
+from slowfast.datasets.ava_helper import parse_bboxes_file
+from slowfast.datasets.cv2_transform import scale, scale_boxes
+from slowfast.datasets.utils import get_sequence
+from slowfast.models import build_model
+from slowfast.utils import misc
+from slowfast.visualization.utils import process_cv2_inputs
+# from slowfast.visualization.video_visualizer import VideoVisualizer
 
 logger = logging.get_logger(__name__)
 

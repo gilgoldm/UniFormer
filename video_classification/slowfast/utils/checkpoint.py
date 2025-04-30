@@ -11,9 +11,9 @@ from collections import OrderedDict
 import torch
 from iopath.common.file_io import g_pathmgr
 
-import video_classification.slowfast.utils.distributed as du
-import video_classification.slowfast.utils.logging as logging
-from video_classification.slowfast.utils.c2_model_loading import get_name_convert_func
+import slowfast.utils.distributed as du
+import slowfast.utils.logging as logging
+from slowfast.utils.c2_model_loading import get_name_convert_func
 
 logger = logging.get_logger(__name__)
 

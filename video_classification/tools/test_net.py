@@ -9,14 +9,14 @@ import pickle
 import torch
 from iopath.common.file_io import g_pathmgr
 
-import video_classification.slowfast.utils.checkpoint as cu
-import video_classification.slowfast.utils.distributed as du
-import video_classification.slowfast.utils.logging as logging
-import video_classification.slowfast.utils.misc as misc
-import video_classification.slowfast.visualization.tensorboard_vis as tb
-from video_classification.slowfast.datasets import loader
-from video_classification.slowfast.models import build_model
-from video_classification.slowfast.utils.meters import AVAMeter, TestMeter
+import slowfast.utils.checkpoint as cu
+import slowfast.utils.distributed as du
+import slowfast.utils.logging as logging
+import slowfast.utils.misc as misc
+import slowfast.visualization.tensorboard_vis as tb
+from slowfast.datasets import loader
+from slowfast.models import build_model
+from slowfast.utils.meters import AVAMeter, TestMeter
 
 logger = logging.get_logger(__name__)
 

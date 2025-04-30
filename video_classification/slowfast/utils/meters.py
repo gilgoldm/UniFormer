@@ -11,11 +11,11 @@ import torch
 from fvcore.common.timer import Timer
 from sklearn.metrics import average_precision_score
 
-import video_classification.slowfast.datasets.ava_helper as ava_helper
-import video_classification.slowfast.utils.logging as logging
-import video_classification.slowfast.utils.metrics as metrics
-import video_classification.slowfast.utils.misc as misc
-from video_classification.slowfast.utils.ava_eval_helper import (
+import slowfast.datasets.ava_helper as ava_helper
+import slowfast.utils.logging as logging
+import slowfast.utils.metrics as metrics
+import slowfast.utils.misc as misc
+from slowfast.utils.ava_eval_helper import (
     evaluate_ava,
     read_csv,
     read_exclusions,

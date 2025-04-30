@@ -8,19 +8,19 @@ import torch
 from fvcore.nn.precise_bn import get_bn_modules, update_bn_stats
 from timm.utils import NativeScaler
 
-import video_classification.slowfast.models.losses as losses
-import video_classification.slowfast.models.optimizer as optim
-import video_classification.slowfast.utils.checkpoint_amp as cu
-import video_classification.slowfast.utils.distributed as du
-import video_classification.slowfast.utils.logging as logging
-import video_classification.slowfast.utils.metrics as metrics
-import video_classification.slowfast.utils.misc as misc
-import video_classification.slowfast.visualization.tensorboard_vis as tb
-from video_classification.slowfast.datasets import loader
-from video_classification.slowfast.datasets.mixup import MixUp
-from video_classification.slowfast.models import build_model
-from video_classification.slowfast.utils.meters import AVAMeter, EpochTimer, TrainMeter, ValMeter
-from video_classification.slowfast.utils.multigrid import MultigridSchedule
+import slowfast.models.losses as losses
+import slowfast.models.optimizer as optim
+import slowfast.utils.checkpoint_amp as cu
+import slowfast.utils.distributed as du
+import slowfast.utils.logging as logging
+import slowfast.utils.metrics as metrics
+import slowfast.utils.misc as misc
+import slowfast.visualization.tensorboard_vis as tb
+from slowfast.datasets import loader
+from slowfast.datasets.mixup import MixUp
+from slowfast.models import build_model
+from slowfast.utils.meters import AVAMeter, EpochTimer, TrainMeter, ValMeter
+from slowfast.utils.multigrid import MultigridSchedule
 
 logger = logging.get_logger(__name__)
 

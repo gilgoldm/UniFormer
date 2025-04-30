@@ -8,7 +8,7 @@ import torch
 import torch.utils.data
 from iopath.common.file_io import g_pathmgr
 
-import video_classification.slowfast.utils.logging as logging
+import slowfast.utils.logging as logging
 
 from . import utils as utils
 from .build import DATASET_REGISTRY

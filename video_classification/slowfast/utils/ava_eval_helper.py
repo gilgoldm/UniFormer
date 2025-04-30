@@ -37,8 +37,8 @@ import time
 from collections import defaultdict
 from iopath.common.file_io import g_pathmgr
 
-import video_classification.slowfast.utils.distributed as du
-from video_classification.slowfast.utils.ava_evaluation import (
+import slowfast.utils.distributed as du
+from slowfast.utils.ava_evaluation import (
     object_detection_evaluation,
     standard_fields,
 )

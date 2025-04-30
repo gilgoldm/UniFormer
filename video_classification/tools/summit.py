@@ -7,11 +7,11 @@ import multiprocessing
 import sys
 
 import torch
-import video_classification.slowfast.utils.checkpoint as cu
-import video_classification.slowfast.utils.multiprocessing as mpu
-from video_classification.slowfast.utils.misc import launch_job
-from video_classification.slowfast.utils.parser import load_config
-from video_classification.slowfast.config.defaults import assert_and_infer_cfg
+import slowfast.utils.checkpoint as cu
+import slowfast.utils.multiprocessing as mpu
+from slowfast.utils.misc import launch_job
+from slowfast.utils.parser import load_config
+from slowfast.config.defaults import assert_and_infer_cfg
 
 from tools.test_net import test
 from tools.train_net import train
