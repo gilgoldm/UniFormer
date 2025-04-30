@@ -14,7 +14,7 @@
     <option name="ADD_SOURCE_ROOTS" value="true" />
     <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
     <option name="SCRIPT_NAME" value="$PROJECT_DIR$/video_classification/tools/run_net.py" />
-    <option name="PARAMETERS" value="--cfg $PROJECT_DIR$/video_classification/exp/uniformer_s16x4_k400/config.yaml DATA.PATH_TO_DATA_DIR $PROJECT_DIR$/video_classification/data_list/k400/ DATA.PATH_PREFIX /data/action-recognition/kinetics-dataset/k400/_val/ DATA.PATH_LABEL_SEPARATOR , TRAIN.EVAL_PERIOD 5 TRAIN.CHECKPOINT_PERIOD 1 TRAIN.BATCH_SIZE 32 NUM_GPUS 1 UNIFORMER.DROP_DEPTH_RATE 0.1 SOLVER.MAX_EPOCH 110 SOLVER.BASE_LR 1e-4 SOLVER.WARMUP_EPOCHS 10.0 SOLVER.WEIGHT_DECAY 0.1 DATA.TEST_CROP_SIZE 224 TEST.NUM_ENSEMBLE_VIEWS 1 TEST.NUM_SPATIAL_CROPS 1 TEST.TEST_BEST False RNG_SEED 6666 OUTPUT_DIR $PROJECT_DIR$/video_classification/exp/uniformer_s16x4_k400/" />
+    <option name="PARAMETERS" value="--cfg $PROJECT_DIR$/video_classification/exp/uniformer_s16x4_k400/test.yaml DATA.PATH_TO_DATA_DIR $PROJECT_DIR$/video_classification/data_list/k400/ DATA.PATH_PREFIX /data/action-recognition/kinetics-dataset/k400/_val/ DATA.PATH_LABEL_SEPARATOR , TRAIN.EVAL_PERIOD 5 TRAIN.CHECKPOINT_PERIOD 1 TRAIN.BATCH_SIZE 32 NUM_GPUS 1 UNIFORMER.DROP_DEPTH_RATE 0.1 SOLVER.MAX_EPOCH 110 SOLVER.BASE_LR 1e-4 SOLVER.WARMUP_EPOCHS 10.0 SOLVER.WEIGHT_DECAY 0.1 DATA.TEST_CROP_SIZE 224 TEST.NUM_ENSEMBLE_VIEWS 4 TEST.NUM_SPATIAL_CROPS 1 TEST.TEST_BEST False RNG_SEED 6666 OUTPUT_DIR $PROJECT_DIR$/video_classification/exp/uniformer_s16x4_k400/" />
     <option name="SHOW_COMMAND_LINE" value="false" />
     <option name="EMULATE_TERMINAL" value="false" />
     <option name="MODULE_MODE" value="false" />
