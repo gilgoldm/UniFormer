@@ -6,8 +6,8 @@ import torch
 import torch.nn.functional as F
 from math import sqrt
 
-import video_classification.slowfast.datasets.utils as data_utils
-from video_classification.slowfast.visualization.utils import get_layer
+import slowfast.datasets.utils as data_utils
+from slowfast.visualization.utils import get_layer
 
 
 class GradCAM:

@@ -9,11 +9,11 @@ import torch
 import torch.nn as nn
 from torch.nn.init import trunc_normal_
 
-import video_classification.slowfast.utils.weight_init_helper as init_helper
-from video_classification.slowfast.models.attention import MultiScaleBlock
-from video_classification.slowfast.models.batchnorm_helper import get_norm
-from video_classification.slowfast.models.stem_helper import PatchEmbed
-from video_classification.slowfast.models.utils import round_width
+import slowfast.utils.weight_init_helper as init_helper
+from slowfast.models.attention import MultiScaleBlock
+from slowfast.models.batchnorm_helper import get_norm
+from slowfast.models.stem_helper import PatchEmbed
+from slowfast.models.utils import round_width
 
 from . import head_helper, resnet_helper, stem_helper
 from .build import MODEL_REGISTRY

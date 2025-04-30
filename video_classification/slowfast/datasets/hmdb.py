@@ -11,8 +11,8 @@ from torchvision import transforms
 import torch.utils.data
 from collections import defaultdict
 
-import video_classification.slowfast.utils.logging as logging
-from video_classification.slowfast.datasets.decoder import get_start_end_idx
+import slowfast.utils.logging as logging
+from slowfast.datasets.decoder import get_start_end_idx
 
 from . import utils as utils
 from .build import DATASET_REGISTRY

@@ -8,8 +8,8 @@ import threading
 import time
 import cv2
 
-import video_classification.slowfast.utils.logging as logging
-from video_classification.slowfast.visualization.utils import TaskInfo
+import slowfast.utils.logging as logging
+from slowfast.visualization.utils import TaskInfo
 
 logger = logging.get_logger(__name__)
 

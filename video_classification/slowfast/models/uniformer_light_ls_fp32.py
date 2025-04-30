@@ -9,7 +9,7 @@ from timm.models.layers import trunc_normal_, DropPath, to_2tuple
 from .build import MODEL_REGISTRY
 import os
 
-import video_classification.slowfast.utils.logging as logging
+import slowfast.utils.logging as logging
 
 logger = logging.get_logger(__name__)
 

@@ -15,10 +15,10 @@ from iopath.common.file_io import g_pathmgr
 from matplotlib import pyplot as plt
 from torch import nn
 
-import video_classification.slowfast.utils.logging as logging
-import video_classification.slowfast.utils.multiprocessing as mpu
-from video_classification.slowfast.datasets.utils import pack_pathway_output
-from video_classification.slowfast.models.batchnorm_helper import SubBatchNorm3d
+import slowfast.utils.logging as logging
+import slowfast.utils.multiprocessing as mpu
+from slowfast.datasets.utils import pack_pathway_output
+from slowfast.models.batchnorm_helper import SubBatchNorm3d
 
 logger = logging.get_logger(__name__)
 

@@ -5,7 +5,7 @@
 
 import torch
 
-import video_classification.slowfast.utils.lr_policy as lr_policy
+import slowfast.utils.lr_policy as lr_policy
 
 
 def construct_optimizer(model, cfg):

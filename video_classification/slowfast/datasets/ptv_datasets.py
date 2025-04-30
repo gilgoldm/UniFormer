@@ -16,7 +16,7 @@ from torchvision.transforms._transforms_video import (
     RandomHorizontalFlipVideo,
 )
 
-import video_classification.slowfast.utils.logging as logging
+import slowfast.utils.logging as logging
 
 from pytorchvideo.data import (
     Charades,

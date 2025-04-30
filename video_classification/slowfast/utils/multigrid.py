@@ -5,7 +5,7 @@
 
 import numpy as np
 
-import video_classification.slowfast.utils.logging as logging
+import slowfast.utils.logging as logging
 
 logger = logging.get_logger(__name__)
 
