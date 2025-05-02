@@ -453,7 +453,7 @@ _C.UNIFORMER.TRADE_OFF = [[], [], [1, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5], [0.5, 
 
 # Note: this is not a good default, it is just there since merge of cfg files
 #  fails when parent does do have a field present in the child.
-_C.UNIFORMER.INIT_VALUE = 0.2
+# _C.UNIFORMER.INIT_VALUE = 0.2
 
 # -----------------------------------------------------------------------------
 # SlowFast options
