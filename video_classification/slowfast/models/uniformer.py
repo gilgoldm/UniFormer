@@ -14,7 +14,7 @@ import slowfast.utils.logging as logging
 logger = logging.get_logger(__name__)
 
 model_path = '/home/gilg/dev/UniFormer/rsu/models/'
-assert os.path.exists(model_path), f'Pretrained models folder does not exists. model_path={model_path}'
+# assert os.path.exists(model_path), f'Pretrained models folder does not exists. model_path={model_path}'
 model_path = {
     'uniformer_small_in1k': os.path.join(model_path, 'uniformer_small_in1k.pth'),
     'uniformer_small_k400_8x8': os.path.join(model_path, 'uniformer_small_k400_8x8.pth'),

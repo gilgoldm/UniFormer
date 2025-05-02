@@ -17,7 +17,7 @@ global_attn = None
 token_indices = None
 
 model_path = '/home/gilg/dev/UniFormer/rsu/models/'
-assert os.path.exists(model_path), f'Pretrained models folder does not exists. model_path={model_path}'
+# assert os.path.exists(model_path), f'Pretrained models folder does not exists. model_path={model_path}'
 model_path = {
     'uniformer_xxs_128_in1k': os.path.join(model_path, 'uniformer_xxs_128_in1k.pth'),
     'uniformer_xxs_160_in1k': os.path.join(model_path, 'uniformer_xxs_160_in1k.pth'),
